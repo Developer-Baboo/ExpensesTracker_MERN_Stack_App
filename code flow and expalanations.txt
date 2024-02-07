@@ -1,0 +1,28 @@
+1 connection.js  =======>This file establishes a connection to your MongoDB Atlas database using the provided URI stored in the ATLAS_URI environment variable.
+
+2 model.js =======> This file defines Mongoose schemas for categories and transactions.
+It creates models for these schemas using mongoose.model().
+Finally, it exports the models to be used in other parts of the application.
+
+
+
+
+
+The apiSlice is imported and used to fetch the useAddTransactionMutation hook, which allows making transactions using the API.
+
+
+
+
+
+Graph.js
+The Graph component is responsible for rendering a doughnut chart and displaying total amounts.
+It uses the useGetLabelsQuery hook from the API slice to fetch data for rendering the chart.
+It checks the state of data fetching using isFetching, isSuccess, and isError variables.
+If data is being fetched (isFetching), it displays a "Fetching" message.
+If data fetching is successful (isSuccess), it renders the Doughnut chart using the chart_Data helper function.
+If there is an error fetching data (isError), it displays an "Error" message.
+It calculates and displays the total amount using the getTotal helper function.
+The Labels component is imported and rendered to display labels for the chart.
+Finally, the components are wrapped inside appropriate HTML elements with necessary styling classes.
+
+

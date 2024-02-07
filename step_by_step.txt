@@ -1,0 +1,48 @@
+npx create-react-app client
+npm install
+cd client
+npm start
+
+
+now install the twailwindcss
+npm i -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p ========> used to configure the tailwindcss 
+add this in tailwind.config.js file 
+content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+
+
+add below lines in App.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+import google gont poppins ruglar 400 select import link 
+and past into app.css file 
+
+
+
+for bakend 
+npm init -y
+cors=> this library share data between two origins 
+dotenv => used to store secrete credentials
+nodemon useed to start the server when we make changes 
+npm i express cors dotenv mongoose nodemon
+
+
+run the server 
+npm start 
+
+controller: used to control the request 
+
+
+show data from backend to server usign redux
+npm i @reduxjs/toolkit react-redux
+RTK Query is an advanced data fetching and caching tool, designed to simplify common cases for loading data in a web application. RTK Query itself is built on top of the Redux Toolkit core, and leverages RTK's APIs like createSlice and createAsyncThunk to implement its capabilities.
+
+
+
+
+
+
+
